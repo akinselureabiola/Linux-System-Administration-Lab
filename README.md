@@ -1,6 +1,12 @@
 # Linux System Administration Lab
 
-Hands-on Linux System Administration portfolio documenting my journey of administering, securing, and maintaining a real Ubuntu Server while developing practical infrastructure skills.
+This repository documents my journey of learning Linux system administration by managing a real Ubuntu server hosted on a Contabo VPS.
+
+Over the past few months, I've been building projects around Active Directory, Microsoft 365, networking and automation. As I started applying for Infrastructure and System Administration roles, I realised I wanted more experience working with Linux outside of virtual machines.
+
+Rather than following another course, I decided to rent a VPS and learn by administering a real server that's exposed to the internet. Every lab in this repository reflects work I've actually carried out, the problems I encountered, how I solved them, and what I learned along the way.
+
+The goal isn't just to build a server—it's to build the habits of documenting work the same way it's would be done in a professional IT environment.
 
 ---
 
@@ -38,6 +44,16 @@ Throughout this project, I'll document every stage of administering and maintain
 - Lessons learned
 - Best practices
 - References to official documentation
+
+---
+
+## Learning Philosophy
+
+I'm documenting every step, even the small ones.
+
+Some of these labs may look straightforward, but they're all part of understanding how Linux systems are administered in production environments.
+
+Rather than rushing through commands, I want to understand why each command exists, what problem it solves, and when it should be used in the real world.
 
 ---
 
