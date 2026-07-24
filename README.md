@@ -1,88 +1,61 @@
 # Linux System Administration Lab
 
-This repository documents my journey of learning Linux system administration by managing a real Ubuntu server hosted on a Contabo VPS.
+## Why I Started This Repository
 
-Over the past few months, I've been building projects around Active Directory, Microsoft 365, networking and automation. As I started applying for Infrastructure and System Administration roles, I realised I wanted more experience working with Linux outside of virtual machines.
+Over the past few months, I've been building projects around Active Directory, Microsoft 365, networking, cybersecurity and AI for IT Support.
 
-Rather than following another course, I decided to rent a VPS and learn by administering a real server that's exposed to the internet. Every lab in this repository reflects work I've actually carried out, the problems I encountered, how I solved them, and what I learned along the way.
+As I continued applying for IT Support and System Administration roles, I realised that Linux kept appearing in almost every job description. Although I had used Linux before in virtual machines and during coursework, I wanted more hands-on experience working with a real server.
 
-The goal isn't just to build a server—it's to build the habits of documenting work the same way it's would be done in a professional IT environment.
+Instead of taking another course, I rented a VPS from Contabo and decided to learn by actually administering a live Ubuntu server connected to the internet.
 
----
+This repository documents that journey.
 
-## Repository Vision
-
-This repository documents my journey of learning Linux System Administration by working with a real Ubuntu server hosted on a Virtual Private Server (VPS).
-
-As I continue working towards a career in IT Support and System Administration, I wanted to move beyond learning Linux in virtual machines or through individual tutorials. My goal is to gain practical, hands-on experience by building, configuring, securing, monitoring, and troubleshooting a real Linux server.
-
-Every lab, configuration, challenge, and lesson learned will be documented throughout this repository. By the end of this project, I aim to build a solid foundation in Linux administration, networking, and server management while creating a portfolio that reflects real practical experience.
+Everything here is based on work I've completed myself—from the commands I ran, the mistakes I made, the problems I encountered, and what I learned while solving them.
 
 ---
 
-## Why I Built This Project
+## What I'm Trying to Achieve
 
-Over the past few months, I've been building projects around Active Directory, Microsoft 365, networking, and AI for IT Support. While reviewing job descriptions and speaking with experienced engineers, one recurring recommendation stood out: strengthen my Linux and infrastructure skills.
+My goal isn't simply to learn Linux commands.
 
-Rather than simply completing another online course, I decided to build this repository as a practical learning journey. Instead of just reading about Linux, I'll be working with a real Ubuntu server, solving problems as they arise, documenting everything I learn, and gradually building the skills expected in IT Support, System Administration, and Cloud Infrastructure roles.
+I want to understand how Linux systems are managed in real environments and build the confidence to administer servers safely.
 
----
+As I work through each lab, I'm also building the habit of documenting my work properly. Good documentation is just as important as solving the technical problem, especially when working in IT teams.
 
-## What You'll Find in This Repository
-
-Throughout this project, I'll document every stage of administering and maintaining a Linux server, including:
-
-- Step-by-step hands-on labs
-- Linux administration tasks
-- Real server configuration
-- Networking concepts
-- Security hardening
-- Bash scripting
-- Troubleshooting scenarios
-- Screenshots
-- Commands with explanations
-- Lessons learned
-- Best practices
-- References to official documentation
+By the end of this project, I want to have a portfolio that shows practical Linux administration skills rather than just certificates.
 
 ---
 
-## Learning Philosophy
+## What You'll Find Here
 
-I'm documenting every step, even the small ones.
+This repository will continue to grow as I complete more labs.
 
-Some of these labs may look straightforward, but they're all part of understanding how Linux systems are administered in production environments.
+Some of the areas I'll be covering include:
 
-Rather than rushing through commands, I want to understand why each command exists, what problem it solves, and when it should be used in the real world.
-
----
-
-## Skills I'll Be Developing
-
-This project focuses on developing practical experience with:
-
-- Linux System Administration
-- Ubuntu Server
-- SSH
-- User and Group Management
-- Linux File Permissions
-- Package Management
+- Linux fundamentals
+- User and group administration
+- File permissions
+- Package management
 - Networking
-- DNS
-- DHCP
-- Firewall Configuration (UFW)
-- Nginx
-- Apache
-- Bash Scripting
-- System Monitoring
-- Log Analysis
-- Cron Jobs
-- Systemd Services
-- SSL Certificates
-- Reverse Proxy
-- Server Security
-- Backup Strategies
+- SSH
+- Firewall configuration (UFW)
+- Bash scripting
+- System monitoring
+- Log analysis
+- Services with systemd
+- Web servers
+- Server security
 - Troubleshooting
+- Automation
+
+Every lab includes:
+
+- Objectives
+- Commands used
+- Explanations
+- Screenshots
+- Lessons learned
+- Real observations from my own server
 
 ---
 
@@ -105,96 +78,82 @@ Linux-System-Administration-Lab/
 
 ---
 
-## Learning Roadmap
+## Labs Completed
 
-This repository will grow as I progress through different areas of Linux System Administration.
+| Lab | Topic | Status |
+|------|-------|--------|
+| Lab 01 | Provisioning an Ubuntu VPS | ✅ Completed |
+| Lab 02 | Initial Server Setup and Package Updates | ✅ Completed |
+| Lab 03 | Linux User, Group and Sudo Administration | ✅ Completed |
 
-### Phase 1
-- Project Foundation
-- GitHub Repository Setup
-- Documentation Structure
+I'll continue updating this table as I complete more labs.
 
-### Phase 2
-- VPS Provisioning
-- Ubuntu Server Installation
-- SSH Configuration
+---
 
-### Phase 3
-- Linux Fundamentals
-- File System Navigation
-- Users and Groups
-- File Permissions
-- Package Management
+## What I've Learned So Far
 
-### Phase 4
-- Linux Networking
-- DNS
-- DHCP
-- Firewall (UFW)
-- SSH Hardening
+One thing I've realised while working through these labs is that Linux isn't difficult because of the commands.
 
-### Phase 5
-- Web Server Administration
+The challenge is understanding why those commands exist, what problem they solve, and when to use them.
+
+For example, creating a user is only a small part of user administration. I also needed to understand group membership, sudo privileges, password policies, account locking, user removal, and how Linux stores account information.
+
+Working through those tasks on my own server made everything much clearer than simply reading about them.
+
+---
+
+## Why I'm Sharing Everything
+
+I'm documenting every lab because I want to be able to look back and see how much I've improved over time.
+
+I also hope these notes help anyone else who's learning Linux and prefers seeing practical examples instead of just reading documentation.
+
+Nothing here is copied from a course.
+
+Every command was tested on my own Ubuntu VPS before it became part of this repository.
+
+---
+
+## What's Next
+
+Some of the topics I plan to cover next include:
+
+- Linux file permissions
+- Ownership and ACLs
+- Process management
+- Networking fundamentals
+- SSH hardening
+- UFW firewall configuration
+- Bash scripting
+- Cron jobs
+- Systemd services
 - Nginx
 - Apache
-- Reverse Proxy
-- SSL Certificates
-
-### Phase 6
-- Monitoring and Logging
-- System Logs
-- Performance Monitoring
-- Fail2Ban
-
-### Phase 7
-- Automation
-- Bash Scripting
-- Cron Jobs
-- Systemd Services
-
-### Phase 8
-- Production-Style Administration
-- Backups
-- Troubleshooting
-- Best Practices
+- Log analysis
+- Monitoring
+- Backup strategies
+- Troubleshooting scenarios
 
 ---
 
-## Progress Tracker
+## Who This Repository Is For
 
-| Phase | Status |
-|--------|--------|
-| Repository Setup | ✅ Completed |
-| Documentation | 🟡 In Progress |
-| VPS Provisioning | ⏳ Pending |
-| Ubuntu Server Installation | ⏳ Pending |
-| Linux Fundamentals | ⏳ Pending |
-| Networking | ⏳ Pending |
-| Web Server Administration | ⏳ Pending |
-| Security Hardening | ⏳ Pending |
-| Monitoring & Logging | ⏳ Pending |
-| Automation | ⏳ Pending |
+I'm building this repository mainly for three reasons:
+
+- To strengthen my Linux administration skills.
+- To create a portfolio that reflects real hands-on experience.
+- To document my learning journey in a way that's easy to revisit later.
+
+If you're also learning Linux, I hope you find something useful here.
 
 ---
 
-## Target Roles
+## Connect With Me
 
-This project is helping me strengthen the practical skills required for roles such as:
+I'm always open to feedback, suggestions and learning from others in the IT community.
 
-- IT Support Specialist
-- IT Administrator
-- System Administrator
-- Linux Administrator
-- Cloud Support Engineer
-- Infrastructure Support Engineer
-
----
-
-## Why I'm Documenting Everything
-
-One thing I've learned throughout my IT journey is that building the solution is only part of the process. Being able to explain what you built, why you built it, how you solved problems, and what you learned is just as valuable.
-
-That's why every lab in this repository will include documentation, screenshots, explanations, troubleshooting notes, and lessons learned. My goal is not only to build technical skills but also to develop the habit of documenting work the way it's often done in professional IT environments.
+- LinkedIn: https://www.linkedin.com/in/abiola-desmond-akinselure-599134241/
+- GitHub: https://github.com/akinselureabiola
 
 ---
 
