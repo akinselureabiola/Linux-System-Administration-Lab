@@ -1,7 +1,5 @@
 # Lab 01 – Provisioning an Ubuntu VPS on Contabo
 
-> **Status:** Completed
-
 ---
 
 # Objective
