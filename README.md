@@ -83,8 +83,10 @@ Linux-System-Administration-Lab/
 | Lab | Topic | Status |
 |------|-------|--------|
 | Lab 01 | Provisioning an Ubuntu VPS | ✅ Completed |
-| Lab 02 | Initial Server Setup and Package Updates | ✅ Completed |
+| Lab 02 | SSH Hardening | ✅ Completed |
 | Lab 03 | Linux User, Group and Sudo Administration | ✅ Completed |
+| Lab 04 | Linux File Ownership and Permissions | ✅ Completed |
+| Lab 05 | Access Control Lists (ACLs) | ✅ Completed |
 
 I'll continue updating this table as I complete more labs.
 
@@ -118,8 +120,6 @@ Every command was tested on my own Ubuntu VPS before it became part of this repo
 
 Some of the topics I plan to cover next include:
 
-- Linux file permissions
-- Ownership and ACLs
 - Process management
 - Networking fundamentals
 - SSH hardening
