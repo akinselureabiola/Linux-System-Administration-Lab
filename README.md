@@ -61,16 +61,22 @@ Every lab includes:
 
 ## Skills Demonstrated
 
+Throughout this project, I've been developing practical Linux system administration skills by working on a live Ubuntu VPS. As I complete each lab, this section continues to grow.
+
+Current areas covered include:
+
 - Ubuntu Server Administration
-- SSH Administration
-- Linux Users & Groups
-- File Ownership & Permissions
+- SSH Administration and Hardening
+- Linux User and Group Administration
+- File Ownership and Permissions
 - Access Control Lists (ACLs)
 - Package Management (APT)
 - Systemd Service Management
-- Linux Log Analysis
-- Troubleshooting
-- Bash & Terminal
+- Linux Log Analysis (journalctl)
+- Linux Process Management
+- Linux Troubleshooting
+- Bash and Terminal Administration
+- System Documentation
 
 ---
 
@@ -97,25 +103,39 @@ Linux-System-Administration-Lab/
 
 | Lab | Topic | Status |
 |------|-------|--------|
-| Lab 01 | Provisioning an Ubuntu VPS | ✅ Completed |
+| Lab 01 | Ubuntu VPS Provisioning | ✅ Completed |
 | Lab 02 | SSH Hardening | ✅ Completed |
 | Lab 03 | Linux User, Group and Sudo Administration | ✅ Completed |
 | Lab 04 | Linux File Ownership and Permissions | ✅ Completed |
 | Lab 05 | Access Control Lists (ACLs) | ✅ Completed |
+| Lab 06 | Package Management (APT) | ✅ Completed |
+| Lab 07 | Systemd Services | ✅ Completed |
+| Lab 08 | Journalctl & Linux Log Analysis | ✅ Completed |
+| Lab 09 | Linux Process Management | ✅ Completed |
 
 I'll continue updating this table as I complete more labs.
 
 ---
 
+## Current Progress
+
+- ✅ 9 Linux administration labs completed
+- 🖥️ Live Ubuntu Server hosted on a Contabo VPS
+- 📸 Every lab includes screenshots and documentation
+- 📝 All commands tested on a real server before publication
+- 🚧 Currently working towards completing the core Linux System Administration roadmap
+
+---
+
 ## What I've Learned So Far
 
-One thing I've realised while working through these labs is that Linux isn't difficult because of the commands.
+Working through these labs has shown me that Linux administration is much more than memorising commands.
 
-The challenge is understanding why those commands exist, what problem they solve, and when to use them.
+Each lab has built on the previous one. I started by provisioning a server and securing SSH access, then moved into user and group administration, file permissions, ACLs, package management, service management, log analysis and process management.
 
-For example, creating a user is only a small part of user administration. I also needed to understand group membership, sudo privileges, password policies, account locking, user removal, and how Linux stores account information.
+One thing I've enjoyed most is seeing how these topics connect. For example, the SSH service I configured earlier appeared again while managing systemd services, analysing logs with `journalctl`, and inspecting running processes. Those connections have helped me understand how different parts of a Linux system work together rather than viewing each topic in isolation.
 
-Working through those tasks on my own server made everything much clearer than simply reading about them.
+Working through everything on my own VPS has made the experience much more practical than simply following tutorials or reading documentation.
 
 ---
 
@@ -133,21 +153,20 @@ Every command was tested on my own Ubuntu VPS before it became part of this repo
 
 ## What's Next
 
-Some of the topics I plan to cover next include:
+The remaining topics I plan to cover include:
 
-- Process management
-- Networking fundamentals
-- SSH hardening
-- UFW firewall configuration
-- Bash scripting
-- Cron jobs
-- Systemd services
+- UFW Firewall
+- Fail2Ban
+- Networking Fundamentals
+- Bash Scripting
+- Cron Jobs
 - Nginx
 - Apache
-- Log analysis
 - Monitoring
-- Backup strategies
-- Troubleshooting scenarios
+- Backup Strategies
+- Troubleshooting Scenarios
+
+After completing the core Linux administration roadmap, I plan to continue expanding this repository with more advanced administration and troubleshooting scenarios. My goal is to build a portfolio that reflects the day-to-day responsibilities of a Linux System Administrator, IT Support Engineer and Infrastructure Engineer, rather than stopping after the initial learning roadmap.
 
 ---
 
