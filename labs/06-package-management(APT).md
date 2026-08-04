@@ -209,88 +209,41 @@ The screenshots below capture the key stages of this lab.
 
 ## 1. Updating Package Information
 
-Refreshing the package index and confirming that the server was already fully up to date.
+Refreshing the package index and confirming that the server was already fully up to date before installing any software.
 
-```text
-sudo apt update
-sudo apt list --upgradable
-```
-
-**Screenshot**
-
-```
-../screenshots/06-package-management/01-system-update.png
-```
+![Updating package information](../screenshots/06-package-management/01-system-update.png)
 
 ---
 
 ## 2. Searching for Package Information
 
-Searching the repositories and viewing detailed information about the `tree` package before installation.
+Searching the Ubuntu repositories and viewing detailed information about the `tree` package before installation.
 
-```text
-apt search tree
-apt show tree
-```
-
-**Screenshot**
-
-```
-../screenshots/06-package-management/02-package-search.png
-```
+![Searching for package information](../screenshots/06-package-management/02-package-search.png)
 
 ---
 
 ## 3. Installing and Verifying the Package
 
-Installing the package and confirming that it was successfully installed.
+Installing the `tree` package and confirming that the installation completed successfully.
 
-```text
-sudo apt install tree
-tree --version
-dpkg -l tree
-```
-
-**Screenshot**
-
-```
-../screenshots/06-package-management/03-package-installation.png
-```
+![Installing and verifying the package](../screenshots/06-package-management/03-package-installation.png)
 
 ---
 
 ## 4. Testing the Installed Package
 
-Using the `tree` command to display the directory structure of the home directory.
+Using the `tree` command to display the directory structure of the home directory and verify that the package was working as expected.
 
-```text
-tree ~
-tree -L 2 ~
-```
-
-**Screenshot**
-
-```
-../screenshots/06-package-management/04-using-tree-command.png
-```
+![Testing the installed package](../screenshots/06-package-management/04-using-tree-command.png)
 
 ---
 
 ## 5. Removing the Package and Cleaning Up
 
-Removing the package, deleting unused dependencies, and cleaning the local package cache.
+Removing the package, deleting unused dependencies and cleaning the local package cache after the exercise.
 
-```text
-sudo apt remove tree
-sudo apt autoremove
-sudo apt autoclean
-```
-
-**Screenshot**
-
-```
-../screenshots/06-package-management/05-package-removal.png
-```
+![Removing the package and cleaning up](../screenshots/06-package-management/05-package-removal.png)
 
 ---
 
