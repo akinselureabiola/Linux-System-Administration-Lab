@@ -59,6 +59,21 @@ Every lab includes:
 
 ---
 
+## Skills Demonstrated
+
+- Ubuntu Server Administration
+- SSH Administration
+- Linux Users & Groups
+- File Ownership & Permissions
+- Access Control Lists (ACLs)
+- Package Management (APT)
+- Systemd Service Management
+- Linux Log Analysis
+- Troubleshooting
+- Bash & Terminal
+
+---
+
 ## Repository Structure
 
 ```text
