@@ -364,45 +364,86 @@ sudo grep -RniE '^\s\*(PasswordAuthentication|KbdInteractiveAuthentication)\s+' 
 sudo fail2ban-client status
 sudo fail2ban-client status sshd
 
-## Screenshots
 
-I kept the screenshots limited to the parts that tell the story of the lab.
+# Screenshots
 
-## 1\. SSH Configuration Before Hardening
+I kept the screenshots limited to the key stages that demonstrate the SSH hardening and troubleshooting process.
 
-This shows the initial effective SSH configuration, including:
+## 1. SSH Configuration Before Hardening
 
-permitrootlogin no
-pubkeyauthentication yes
-passwordauthentication yes
+This shows the initial effective SSH configuration before the hardening changes were applied.
 
-### 2\. Finding the Configuration Conflict
+The server was already configured with:
 
-This shows the investigation that revealed different SSH configuration files were setting PasswordAuthentication differently.
+* `PermitRootLogin no`
+* `PubkeyAuthentication yes`
+* `PasswordAuthentication yes`
 
-### 3\. SSH Hardening Configuration
+This established the baseline configuration and showed that SSH key authentication was enabled while password authentication was still permitted.
 
-This shows the dedicated hardening configuration I created:
+![SSH Configuration Before Hardening](./screenshots/12-linux-security-audit/01-ssh-before.png)
 
+---
+
+## 2. Finding the Configuration Conflict
+
+This shows the investigation into the SSH configuration files after identifying that `PasswordAuthentication` was not producing the expected effective result.
+
+The investigation revealed that multiple configuration files were defining `PasswordAuthentication` differently, including settings in `/etc/ssh/sshd_config.d/`.
+
+This demonstrated why checking the effective configuration was important rather than assuming the main configuration file was the only source of the setting.
+
+![Finding the SSH Configuration Conflict](./screenshots/12-linux-security-audit/02-ssh-config-conflict.png)
+
+---
+
+## 3. SSH Hardening Configuration
+
+This shows the dedicated hardening configuration created to disable password-based SSH authentication and interactive keyboard authentication.
+
+The configuration contains:
+
+```text
 PasswordAuthentication no
 KbdInteractiveAuthentication no
+```
 
-### 4\. Final Effective SSH Configuration
+This provided a controlled and clearly identifiable location for the SSH hardening settings.
 
-This confirms that the new settings were actually being used by SSH:
+![SSH Hardening Configuration](./screenshots/12-linux-security-audit/03-ssh-hardening.png)
 
-permitrootlogin no
-pubkeyauthentication yes
-passwordauthentication no
-kbdinteractiveauthentication no
+---
 
-### 5\. Successful SSH Login After Hardening
+## 4. Final Effective SSH Configuration
 
-Finally, I tested a second SSH connection from another terminal.
+This confirms that the SSH service was using the intended hardened configuration after the changes were applied.
 
-The connection succeeded using my SSH key, confirming that I had hardened SSH without locking myself out.
+The final effective settings were:
 
-Final Thoughts
+```text
+PermitRootLogin no
+PubkeyAuthentication yes
+PasswordAuthentication no
+KbdInteractiveAuthentication no
+```
+
+This validation step confirmed that password authentication had been successfully disabled while SSH key authentication remained available.
+
+![Final Effective SSH Configuration](./screenshots/12-linux-security-audit/04-ssh-final.png)
+
+---
+
+## 5. Successful SSH Login After Hardening
+
+Finally, I tested a new SSH connection from another terminal after applying the hardening changes.
+
+The connection succeeded using SSH key authentication, confirming that legitimate administrative access was still available and that the hardening changes had not locked me out of the server.
+
+![Successful SSH Login After Hardening](./screenshots/12-linux-security-audit/05-ssh-success.png)
+
+---
+
+# Final Thoughts
 
 I came into this lab thinking I was mainly going to check whether the server was secure.
 
@@ -410,13 +451,14 @@ What I actually ended up doing was more useful: I learned how to investigate a s
 
 I found a real SSH configuration issue, traced it back to the configuration files, fixed it properly, validated the effective settings, and tested the change from a second SSH session.
 
-I also investigated the gateway because it wasn't responding to ping, but the other network tests showed that connectivity was working. So instead of changing something unnecessarily, I left it alone.
+I also investigated the gateway because it wasn't responding to ping, but the other network tests showed that connectivity was working. Instead of changing something unnecessarily, I left it alone.
 
 That is probably the biggest lesson for me from this lab:
 
-Don't change things just because a command produces an unexpected result. Find out what the result actually means first.
+> **Don't change things just because a command produces an unexpected result. Find out what the result actually means first.**
 
-Lab Status
+
+## Lab Status
 
 Lab 13 – Linux Security Audit: COMPLETE
 
@@ -424,7 +466,7 @@ The main audit and SSH hardening work is complete.
 
 The remaining items, such as the available package updates, required reboot, and failed services, are being treated as separate maintenance/remediation tasks rather than changing the scope of this lab.
 
-Next
+## Next
 
 The next labs will build on this Linux foundation and move further into networking, DNS troubleshooting, web servers, SSL, reverse proxies, containers, automation, monitoring and other system administration tasks.
 
