@@ -381,7 +381,7 @@ The server was already configured with:
 
 This established the baseline configuration and showed that SSH key authentication was enabled while password authentication was still permitted.
 
-![SSH Configuration Before Hardening](./screenshots/12-linux-security-audit/01-ssh-before.png)
+![SSH Configuration Before Hardening](../screenshots/12-linux-security-audit/01-ssh-before.png)
 
 ---
 
@@ -393,7 +393,7 @@ The investigation revealed that multiple configuration files were defining `Pass
 
 This demonstrated why checking the effective configuration was important rather than assuming the main configuration file was the only source of the setting.
 
-![Finding the SSH Configuration Conflict](./screenshots/12-linux-security-audit/02-ssh-config-conflict.png)
+![Finding the SSH Configuration Conflict](../screenshots/12-linux-security-audit/02-ssh-config-conflict.png)
 
 ---
 
@@ -410,7 +410,7 @@ KbdInteractiveAuthentication no
 
 This provided a controlled and clearly identifiable location for the SSH hardening settings.
 
-![SSH Hardening Configuration](./screenshots/12-linux-security-audit/03-ssh-hardening.png)
+![SSH Hardening Configuration](../screenshots/12-linux-security-audit/03-ssh-hardening.png)
 
 ---
 
@@ -429,7 +429,7 @@ KbdInteractiveAuthentication no
 
 This validation step confirmed that password authentication had been successfully disabled while SSH key authentication remained available.
 
-![Final Effective SSH Configuration](./screenshots/12-linux-security-audit/04-ssh-final.png)
+![Final Effective SSH Configuration](../screenshots/12-linux-security-audit/04-ssh-final.png)
 
 ---
 
@@ -439,7 +439,7 @@ Finally, I tested a new SSH connection from another terminal after applying the 
 
 The connection succeeded using SSH key authentication, confirming that legitimate administrative access was still available and that the hardening changes had not locked me out of the server.
 
-![Successful SSH Login After Hardening](./screenshots/12-linux-security-audit/05-ssh-success.png)
+![Successful SSH Login After Hardening](../screenshots/12-linux-security-audit/05-ssh-success.png)
 
 ---
 

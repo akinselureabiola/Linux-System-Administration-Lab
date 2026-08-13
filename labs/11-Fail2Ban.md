@@ -321,7 +321,7 @@ The screenshots below capture the key tasks completed throughout this lab.
 
 Installing the Fail2Ban package and verifying that the installation completed successfully.
 
-![Installing Fail2Ban](./screenshots/11-fail2ban/01-install-fail2ban.png)
+![Installing Fail2Ban](../screenshots/11-fail2ban/01-install-fail2ban.png)
 
 ---
 
@@ -329,7 +329,7 @@ Installing the Fail2Ban package and verifying that the installation completed su
 
 Confirming that the Fail2Ban service is running and checking the active SSH jail.
 
-![Fail2Ban service status](./screenshots/11-fail2ban/02-service-status.png)
+![Fail2Ban service status](../screenshots/11-fail2ban/02-service-status.png)
 
 ---
 
@@ -337,7 +337,7 @@ Confirming that the Fail2Ban service is running and checking the active SSH jail
 
 Inspecting the Fail2Ban configuration directory and reviewing the default SSH jail configuration.
 
-![Fail2Ban configuration](./screenshots/11-fail2ban/03-configuration.png)
+![Fail2Ban configuration](../screenshots/11-fail2ban/03-configuration.png)
 
 ---
 
@@ -345,7 +345,7 @@ Inspecting the Fail2Ban configuration directory and reviewing the default SSH ja
 
 Creating the `jail.local` file and configuring custom security policies for SSH.
 
-![Custom jail.local configuration](./screenshots/11-fail2ban/04-jail-local.png)
+![Custom jail.local configuration](../screenshots/11-fail2ban/04-jail-local.png)
 
 ---
 
@@ -353,7 +353,7 @@ Creating the `jail.local` file and configuring custom security policies for SSH.
 
 Checking the active Fail2Ban configuration using the fail2ban-client utility.
 
-![Runtime configuration verification](./screenshots/11-fail2ban/05-runtime-configuration.png)
+![Runtime configuration verification](../screenshots/11-fail2ban/05-runtime-configuration.png)
 
 ---
 
@@ -361,7 +361,7 @@ Checking the active Fail2Ban configuration using the fail2ban-client utility.
 
 Viewing the SSH jail status, failed login attempts, banned IP addresses and overall protection statistics.
 
-![Fail2Ban SSH jail status](./screenshots/11-fail2ban/06-sshd-status.png)
+![Fail2Ban SSH jail status](../screenshots/11-fail2ban/06-sshd-status.png)
 
 ---
 
@@ -369,7 +369,7 @@ Viewing the SSH jail status, failed login attempts, banned IP addresses and over
 
 Reviewing real SSH authentication logs to observe brute-force login attempts detected on the public VPS.
 
-![SSH authentication logs](./screenshots/11-fail2ban/07-authentication-logs.png)
+![SSH authentication logs](../screenshots/11-fail2ban/07-authentication-logs.png)
 
 ---
 
