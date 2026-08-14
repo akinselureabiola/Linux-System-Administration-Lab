@@ -1,4 +1,4 @@
-# Lab 14 — Linux Network & DNS Troubleshooting
+# Lab 13 — Linux Network & DNS Troubleshooting
 
 ## Overview
 
